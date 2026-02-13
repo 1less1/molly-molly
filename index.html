@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine’s Day 💘</title>
+    <link rel="stylesheet" href="dist/output.css" />
+</head>
+
+<body
+    class="relative flex flex-col items-center justify-start min-h-screen overflow-x-hidden bg-cover bg-center bg-fixed select-none"
+    style="background-image: url('./public/jungle.png');">
+
+    <!-- Leaves -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <span class="absolute animate-float-slow text-4xl left-10 top-[-10%]">🍃</span>
+        <span class="absolute animate-float-medium text-5xl right-20 top-[-15%]">🌿</span>
+        <span class="absolute animate-float-fast text-4xl left-1/2 top-[-20%]">🍃</span>
+    </div>
+
+
+    <!-- Mian Content -->
+    <div class="relative flex flex-col items-center justify-center min-h-screen py-20 px-4 w-full z-10">
+
+        <!-- King Juliens -->
+        <div class="relative w-full max-w-lg sm:max-w-2xl flex justify-center">
+            <img src="./public/king-julien-laying.png" id="julienLaying" alt="King Julien Laying"
+                class="absolute z-20 drop-shadow-2xl transition-all duration-500 -top-[130px] w-[256px]" />
+
+            <img src="./public/king-julien-dancing.webp" id="julienDancing" alt="King Julien Dancing"
+                class="absolute z-20 drop-shadow-2xl hidden animate-bounce -top-[210px] w-[200px]" />
+        </div>
+
+        <!-- Main White Box -->
+        <div
+            class="bg-white rounded-[2rem] w-full max-w-lg sm:max-w-2xl p-3 sm:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.4)]">
+            <div
+                class="relative flex flex-col items-center justify-center rounded-[1.5rem] border-4 border-dashed border-pink-400 w-full p-6 sm:p-10 bg-pink-50">
+
+                <!-- Message Container -->
+                <div id="messageContainer" class="w-full">
+                    <div id="message1" class="transition-opacity duration-500">
+                        <h1
+                            class="text-xl sm:text-3xl font-black text-pink-600 mb-2 text-center leading-tight uppercase tracking-wider">
+                            So Valentine's day is coming up...
+                        </h1>
+                        <p class="text-sm sm:text-lg italic text-gray-700 text-center font-medium px-2">
+                            "... and I would like to move it, move it... <br class="hidden sm:block">
+                            straight into your heart 💘"
+                        </p>
+                    </div>
+
+                    <div id="message2" class="hidden animate-pulse">
+                        <p
+                            class="text-lg sm:text-2xl font-black text-pink-600 mb-2 text-center uppercase tracking-widest">
+                            "Maurice! The groove! <br> It is hitting me!"
+                        </p>
+                    </div>
+
+                    <div id="message3" class="hidden">
+                        <p class="text-sm sm:text-lg italic text-gray-700 text-center font-medium px-2">
+                            "I have a message from <span class="text-pink-500 font-bold">DJ Glitter Buns</span> 💎..."
+                        </p>
+                    </div>
+
+                    <div id="message4" class="hidden">
+                        <h1
+                            class="text-2xl sm:text-5xl font-black text-pink-600 mb-4 text-center leading-none uppercase tracking-tighter">
+                            Molly Molly Oxen Free, <br> will you be my valentine?
+                        </h1>
+                    </div>
+
+                    <div id="message5" class="hidden flex flex-col items-center w-full">
+                        <p class="text-sm sm:text-lg italic text-gray-700 text-center font-medium mb-4">
+                            "Perfect, now that is out of the way... <br> enjoy this video 😎"
+                        </p>
+                        <div
+                            class="w-full max-w-[275px] aspect-[3/4] overflow-hidden rounded-3xl shadow-2xl border-4 border-pink-200 bg-black">
+                            <video id="celebrationVideo" controls class="w-full h-full object-cover">
+                                <source src="./public/lil-uzi-dance.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <button id="button1"
+                    class="mt-8 w-full sm:w-64 px-8 py-4 bg-pink-500 hover:bg-pink-600 text-white text-lg font-bold rounded-full transition-all transform hover:scale-110 active:scale-95 shadow-lg uppercase tracking-widest">
+                    Let's Move It! 👑
+                </button>
+
+                <button id="button2"
+                    class="hidden mt-6 w-full sm:w-64 px-8 py-4 bg-green-500 hover:bg-green-600 text-white text-lg font-bold rounded-full transition-all transform hover:scale-110 active:scale-95 shadow-lg uppercase tracking-wider">
+                    What's up? 🤔
+                </button>
+
+                <button id="button3"
+                    class="hidden mt-6 w-full sm:w-64 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white text-lg font-bold rounded-full transition-all transform hover:scale-110 active:scale-95 shadow-lg uppercase tracking-wider">
+                    The message? 🤔
+                </button>
+
+                <div id="buttonRow" class="hidden flex flex-row items-center justify-center gap-4 mt-6">
+                    <button id="yesButton1"
+                        class="w-full sm:w-32 px-6 py-4 bg-pink-500 hover:bg-pink-600 text-white text-lg font-bold rounded-full transition-all transform hover:scale-110 active:scale-95 shadow-lg uppercase">
+                        Yes
+                    </button>
+                    <span class="text-xl font-black text-pink-400 italic">OR</span>
+                    <button id="yesButton2"
+                        class="w-full sm:w-32 px-6 py-4 bg-pink-700 hover:bg-pink-800 text-white text-lg font-bold rounded-full transition-all transform hover:scale-110 active:scale-95 shadow-lg uppercase">
+                        Yes
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>
